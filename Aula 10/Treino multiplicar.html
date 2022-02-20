@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino de somar</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font: normal 15pt Arial;
+        }
+        div{
+            margin-top: 20px ;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="seila">
+        Multiplique aqui :D
+    </h1>
+    <input type="text" name="numb1" id="numb1"> X
+    <input type="text" name="numb2" id="numb2">
+    <input type="button" value="multiplicar" onclick="multiplicar()">
+    <div id="res">Resultado:</div>
+    
+    <script>
+        function multiplicar(){
+        var Num1 = document.getElementById('numb1')
+        var Num2 = document.getElementById('numb2')
+        var res = document.getElementById('res')
+        var n1 = Number(Num1.value)
+        var n2 = Number(Num2.value)
+        var M = n1 * n2 
+        res.innerHTML = `Resultado: ${M}`
+        }
+
+
+    </script>
+</body>
+</html>

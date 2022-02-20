@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font: normal 20pt arial;
+        }
+        h1{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        var nome2 = window.prompt('Escreva outro nome:')
+        var NL1 = nome.length
+        var NL2 = nome2.length
+        var s = NL1 + NL2
+        document.write(`<h1>Olá, ${nome}!</h1> <br/>`)
+        document.write(`Dado os nomes ${nome} e ${nome2}<br/>`)
+        document.write(`A soma das letras desses nomes é ${s}`)
+    </script>
+    
+</body>
+</html>

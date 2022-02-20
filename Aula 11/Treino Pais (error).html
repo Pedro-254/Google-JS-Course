@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de pais</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Descubra sua nacionalidade abaixo:</h1>
+    Escreva seu pais de origem: <input name="paistxt" id="paistxt"> .
+   <input type="button" value="Confirmar" onclick="confirmar()" >
+   <div id="res">
+
+   </div>
+
+   <script>
+
+    function confirmar(){
+
+        var ptxt = window.document.querySelector('input#paistxt')
+        var r = window.document.querySelector('div#res')
+        
+        var p = String(ptxt.value)
+        
+        if (p == 'Brasil') {
+            r.innerHTML = 'vc é brasileiro'
+            
+        } else {
+            r.innerHTML = 'vc não é brasileiro'
+        }
+
+    }
+     // Não ta dando certo ele não consegue identidicar o 'Brasil' como True... não sei o motivo...
+   </script> 

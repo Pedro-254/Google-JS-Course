@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de IMC</title>
+    <link rel="stylesheet" href="styleIMC.css">
+</head>
+<body>
+    <header>
+        <h1>Teste de IMC</h1>
+    </header>
+    <section>
+        <div>
+           <p>Insira seu Peso   <input type="text" name="peso" id="peso"> <strong> Kg</strong></p>
+           <p>Insira sua Altura <input type="text" name="altura" id="altura"> <strong> m</strong> </p>
+           <p>Insira sua Idade <input type="text" name="idade" id="idade"><strong> Anos</strong></p>
+
+           <p><input type="button" value="calcular" onclick="calcular()"></p>
+        </div>
+
+        <div id="res">
+            <p>Preencha os dados acima!</p>
+        </div>
+        <div id="estado">
+            <p></p>
+        </div>
+    </section>
+<script src="ScriptIMC.js"></script>
+</body>
+</html>
